@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro de Pedido</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .form-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+            box-sizing: border-box;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            font-size: 14px;
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 5px;
+            display: block;
+        }
+        input[type="text"], input[type="date"], input[type="datetime-local"], input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+            margin-top: 5px;
+            transition: border-color 0.3s;
+        }
+        input[type="text"]:focus, input[type="date"]:focus, input[type="datetime-local"]:focus, input[type="number"]:focus {
+            border-color: #4CAF50;
+        }
+        .btn-submit {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            width: 100%;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .btn-submit:hover {
+            background-color: #45a049;
+        }
+        .form-footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Haz tú pedido</h2>
+        <form action="../php/registrar_pedido.php" method="POST">
+             <div class="form-group">
+                <label for="id_cliente">ID de Pedido</label>
+                <input type="text" id="id_cliente" name="id_cliente" placeholder="Ingresa el ID del pedido" required>
+            </div>
+            <div class="form-group">
+                <label for="fecha_entrega">Fecha de Entrega</label>
+                <input type="datetime-local" id="fecha_entrega" name="fecha_entrega" required>
+            </div>
+            <div class="form-group">
+                <label for="fecha_devolucion">Fecha de Devolución</label>
+                <input type="datetime-local" id="fecha_devolucion" name="fecha_devolucion" required>
+            </div>
+            <div class="form-group">
+                <label for="cantidad_total_pago">Cantidad Total de Pago (MXN)</label>
+                <input type="number" id="cantidad_total_pago" name="cantidad_total_pago" placeholder="Ej. 5000" required>
+            </div>
+            <div class="form-group">
+                <label for="cantidad_adelantada">Cantidad Adelantada de Anticipo (MXN)</label>
+                <input type="number" id="cantidad_adelantada" name="cantidad_adelantada" placeholder="Ej. 1000" required>
+            </div>
+
+            <button type="submit" class="btn-submit">Registrar Pedido</button>
+        </form>
+        <div class="form-footer">
+            <p>&copy; 2024 Alquiladora de mesas y sillas.</p>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>alquiler</title>
+    <script src="https://kit.fontawesome.com/283335a286.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@700&family=Mulish:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <header class="encabezado">
+        <div class="contenedor-navegacion">
+            <div class="contenido-navegacion contenedor">
+                <div class="logo">
+                    <h2>Productos <span class="verde">de</span><span>Alta</span><span class="rojo">Calida</span></h2>
+                </div>
+                <nav class="navegacion ocultar">
+                    <a href="HTML/Cliente.html">Registro de Cliente</a>
+                    <a href="HTML/Pedido.html">Has tu pedido</a>
+                    <a href="HTML/Inventario.html">Control de inventario</a>
+                    <a href="#">Contacto</a>
+                </nav>
+                <div class="hamburguesa">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+        <div class="contenido-header">
+            <div class="contenedor-encabezado">
+                <div class="texto-encabezado">
+                    <h2>'Alquiladora de sillas y mesas'</h2>
+                    <a href="#" class="btn bordes">Bienvenido</a>
+                </div>
+                <video autoplay loop muted>
+                    <source src="assets/video.mp4">
+                </video>
+            </div>
+        </div>
+    </header>
+
+    <div class="contenedor-nosotros contenedor">
+        <div class="texto-nosotros">
+            <p class="bienvenida">Bienvenido a!</p>
+            <h1>NUESTRA PAGINA</h1>
+            <p>Estimado cliente, es un placer darle la bienvenida a nuestro sitio web. <br>Aquí encontrará información útil sobre nuestros productos y lo que le ofrecemos.
+            </p>
+            <a href="#" class="btn btn-rojo">Contactos</a>
+        </div>
+        <div class="imagenes-nosotros">
+            <div class="imagen1">
+                <img data-src="assets/img/nosotros1.webp" alt="mujer comiendo pizza">
+            </div>
+            <div class="imagenes2">
+                <img data-src="assets/img/nosotros2.webp" alt="mujeres comiendo pizza">
+                <img data-src="assets/img/nosotros3.webp" alt="plato con pasta">
+            </div>
+        </div>
+    </div>
+
+    <section class="Menu contenedor">
+        <h2 class="texto-platillos">Productos a ofrecer a rentar</h2>
+        <div class="botones-platillos">
+            <button class="todos btn btn-verde">Inicio</button>
+            <button class="pasta btn btn-verde">Mesas</button>
+            <button class="ensaladas btn btn-verde">Sillas</button>
+            <button class="pizza btn btn-verde">Manteles</button>
+        </div>
+        <div class="platillos">
+            <div class="platillo" data-platillo="pasta">
+                <img data-src="assets/img/Mesa_Rectangular.webp" alt="pasta"">
+                <h2>Meza Rectangular</h2>
+                <p>Producto muy agradable para lugares estrechos y de forma comoda.</p>
+                <div class="precio">
+                    <p>$60.0</p>
+                    <button><i class="fas fa-shopping-basket"></i></button>
+                </div>
+            </div>
+            <div class="platillo" data-platillo="pasta">
+                <img data-src="assets/img/Meza_Redonda.webp" alt="pasta">
+                <h2>Mesa Redonda</h2>
+                <p>Meza muy elegante para eventos sociales iconicos de cada cliente</p>
+                <div class="precio">
+                    <p>$60.0</p>
+                    <button><i class="fas fa-shopping-basket"></i></button>
+                </div>
+            </div>
+            <div class="platillo" data-platillo="ensalada">
+                <img data-src="assets/img/Silla.webp" alt="ensalada">
+                <h2>Silla plegable</h2>
+                <p>Recomendada para cualquier tipo de eventos el cual tiene la capacidad<br> de alojar a clientes en un entorno comodo</p>
+                <div class="precio">
+                    <p>$50.0</p>
+                    <button><i class="fas fa-shopping-basket"></i></button>
+                </div>
+            </div>
+            <div class="platillo" data-platillo="pizza">
+                <img data-src="assets/img/Mantel_Blanco.webp" alt="pizza">
+                <h2>Mantel Blanco</h2>
+                <p>Mantel decorativo para gusto del cliente y elegante</p>
+                <div class="precio">
+                    <p>$60.0</p>
+                    <button><i class="fas fa-shopping-basket"></i></button>
+                </div>
+            </div>
+            <div class="platillo" data-platillo="pizza">
+                <img data-src="assets/img/Mantel_Azul.webp" alt="pizza">
+                <h2>Mantel Azul</h2>
+                <p>Mantel recomendado para eventos alegres y especiales</p>
+                <div class="precio">
+                    <p>$60.0</p>
+                    <button><i class="fas fa-shopping-basket"></i></button>
+                </div>
+            </div>
+            <div class="platillo" data-platillo="pizza">
+                <img data-src="assets/img/Mantel_Morado.webp" alt="pizza">
+                <h2>Mantel Morado</h2>
+                <p>Recomendado para gusto del cliente para eventos simbolicos</p>
+                <div class="precio">
+                    <p>$60.0</p>
+                    <button><i class="fas fa-shopping-basket"></i></button>
+                </div>
+            </div>
+            <div class="platillo" data-platillo="pizza">
+                <img data-src="assets/img/Mantel_Amarrillo.webp" alt="pizza">
+                <h2>Mantel Amarillo</h2>
+                <p>Mantel decorativo para gusto del cliente y elegante</p>
+                <div class="precio">
+                    <p>$60.0</p>
+                    <button><i class="fas fa-shopping-basket"></i></button>
+                </div>
+            </div>
+            <div class="platillo" data-platillo="pizza">
+                <img data-src="assets/img/Mantel_Rojo.webp" alt="pizza">
+                <h2>Mantel Rojo</h2>
+                <p>Mantel decorativo para gusto del cliente y elegante</p>
+                <div class="precio">
+                    <p>$60.0</p>
+                    <button><i class="fas fa-shopping-basket"></i></button>
+                </div>
+            </div>
+            <div class="platillo" data-platillo="pizza">
+                <img data-src="assets/img/Mantel_Verde.webp" alt="pizza">
+                <h2>Mantel verde</h2>
+                <p>Recomendado para gusto del cliente para eventos simbolicos</p>
+                <div class="precio">
+                    <p>$60.0</p>
+                    <button><i class="fas fa-shopping-basket"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="separador">
+        <div class="contenido-separador contenedor">
+            <h2>Renta de sillas y mesas para eventos especiales</h2>
+            <p>Lo mejor de nuestro servicio</p>
+            <a href="HTML/Pedido.html" class="btn btn-verde">Ordenar ahora</a>
+        </div>
+    </div>
+
+    <section class="chef contenedor">
+        <h2>Local de pedidos</h2>
+        <div class="contenido-chef">
+            <div class="texto-chef">
+                <h3>La mejor calidad disponible
+                </h3>
+                <p>Recomendados por nuestro clientes, los cuales les dimos nuestro servicio y nosotros nuestra cofieanza</p>
+
+            </div>
+            <div class="imagen-chef">
+                <img data-src="assets/img/logo.webp" alt="fotografia dela alquiladora">
+            </div>
+        </div>
+    </section>
+
+    <div class="formulario-contacto contenedor">
+
+        <div class="informacion-contacto">
+            <h3>Contactanos ¡Alquiladora!</h3>
+            <p><i class="fas fa-map-marker-alt"></i>Calle Motenehuatzi 189,<br>
+                 Santa María Tlacatecpa, Sección Sexta, 90676 Contla de Juan Cuamatzi, Tlax</p>
+            <p><i class="fas fa-envelope"></i> MezasYsillas@gmail.com</p>
+            <div class="redes-sociales">
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+        </div>
+
+        <div class="form-container">
+            
+            
+            <div class="pie-pagina">
+                <div class="contenedor-piepagina contenedor">
+                    <div class="info">
+                        <h3>Dirección</h3>
+                        <p>Calle Motenehuatzi 189,<br>
+                            Santa María Tlacatecpa, Sección Sexta,<br>
+                            90676 Contla de Juan Cuamatzi, Tlax</p>
+                    </div>
+                    <div class="info">
+                        <h3>Días especiales</h3>
+                        <p>Sábados y Jueves 7am - 11pm</p>
+                    </div>
+                    <div class="info">
+                        <h3>Horarios</h3>
+                        <p>Lunes - Domingo 7am - 11pm</p>
+                        <div class="redes-sociales redes-pie">
+                            <i class="fab fa-facebook-square"></i>
+                            <i class="fab fa-twitter-square"></i>
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <footer class="footer">
+                <p>&copy; 2024 Alquiladora de Mesas y Sillas.</p>
+            </footer>
+            
+            <script src="js/app.js"></script>
+            
+</body>
+
+</html>
